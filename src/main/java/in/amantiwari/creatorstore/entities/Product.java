@@ -1,4 +1,4 @@
-package in.amantiwari.creatorstore.entites;
+package in.amantiwari.creatorstore.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

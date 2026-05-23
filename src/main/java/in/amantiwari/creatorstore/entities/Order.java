@@ -1,4 +1,4 @@
-package in.amantiwari.creatorstore.entites;
+package in.amantiwari.creatorstore.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMin;
