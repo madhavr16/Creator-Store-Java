@@ -1,11 +1,16 @@
 spring:
+
   application:
     name: CreatorStore
 
   datasource:
-    url: ${DATABASE_URL}
-    username: ${DATABASE_USERNAME}
-    password: ${DATABASE_PASSWORD}
+    # url: ${DB_URL}
+    # username: ${DB_USERNAME}
+    # password: ${DB_PASSWORD}
+    url: jdbc:postgresql://localhost:5435/creatorstore?options=-c%20TimeZone=Asia/Kolkata
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
@@ -16,3 +21,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+server:
+  port: 8086
